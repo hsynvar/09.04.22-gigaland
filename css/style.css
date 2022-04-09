@@ -18,34 +18,34 @@ a {
 #header .headLeft input {
   width: 65%;
   padding: 5px 0;
-  margin-left: 15px;
+  margin-left: 25px;
   background: rgba(255, 255, 255, 0.198);
-  border-radius: 20px;
+  border-radius: 18px;
   border: none;
 }
 
 #header .headLeft input::-webkit-input-placeholder {
   padding: 15px;
   color: white;
-  font-weight: 200;
+  font-weight: 150;
 }
 
 #header .headLeft input:-ms-input-placeholder {
   padding: 15px;
   color: white;
-  font-weight: 200;
+  font-weight: 150;
 }
 
 #header .headLeft input::-ms-input-placeholder {
   padding: 15px;
   color: white;
-  font-weight: 200;
+  font-weight: 150;
 }
 
 #header .headLeft input::placeholder {
   padding: 15px;
   color: white;
-  font-weight: 200;
+  font-weight: 150;
 }
 
 #header .headRight .menu ul li {
@@ -56,7 +56,8 @@ a {
   display: block;
   position: relative;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 #header .headRight .menu ul li a i {
@@ -273,16 +274,15 @@ a {
 }
 
 #header .headRight .wallet {
-  padding: 25px;
-  margin-left: 10px;
+  padding: 25px 15px;
 }
 
 #header .headRight .wallet a {
   display: block;
-  padding: 5px 15px;
+  padding: 4px 20px;
   border-radius: 20px;
   color: white;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   background: linear-gradient(217deg, #1081e8, #f32177 75%);
 }

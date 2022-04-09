@@ -14,15 +14,14 @@ a {
         input {
             width: 65%;
             padding: 5px 0;
-            margin-left: 15px;
+            margin-left: 25px;
             background: rgba(255, 255, 255, 0.198);
-            border-radius: 20px;
+            border-radius: 18px;
             border: none;
-
             &::placeholder {
                 padding: 15px;
                 color: white;
-                font-weight: 200;
+                font-weight: 150;
             }
         }
     }
@@ -37,7 +36,8 @@ a {
                         display: block;
                         position: relative;
                         color: white;
-                        font-weight: bold;
+                        font-weight: bolder;
+                        font-size: 14px;
 
                         i {
                             font-size: 13px;
@@ -263,15 +263,13 @@ a {
         }
 
         .wallet {
-            padding: 25px;
-            margin-left: 10px;
-
+            padding: 25px 15px;
             a {
                 display: block;
-                padding: 5px 15px;
+                padding: 4px 20px;
                 border-radius: 20px;
                 color: white;
-                font-weight: 500;
+                font-weight: bold;
                 font-size: 14px;
                 background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
             }
