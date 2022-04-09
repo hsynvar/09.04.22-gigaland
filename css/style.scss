@@ -1,0 +1,344 @@
+a {
+    text-decoration: none;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: transparent;
+    .headLeft {
+        width: 40%;
+        padding: 15px;
+        input {
+            width: 65%;
+            padding: 5px 0;
+            margin-left: 15px;
+            background: rgba(255, 255, 255, 0.198);
+            border-radius: 20px;
+            border: none;
+
+            &::placeholder {
+                padding: 15px;
+                color: white;
+                font-weight: 200;
+            }
+        }
+    }
+    // headLeft end 
+    // headRight start 
+    .headRight {
+        .menu {
+            ul {
+                li {
+                    padding: 30px 10px;
+                    a {
+                        display: block;
+                        position: relative;
+                        color: white;
+                        font-weight: bold;
+
+                        i {
+                            font-size: 13px;
+                            margin-left: 5px;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 0%;
+                            height: 3px;
+                            transition: 0.5s;
+                            background-color: #1081E8;
+                        }
+                        &:hover {
+                            &::before {
+                                width: 70%;
+                            }
+                        }
+                    }
+
+                    // homeMenu start 
+                    &.homeMenu {
+                        position: relative;
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
+                            width: 180px;
+                            background-color: rgba(0, 0, 0, 0.753);
+                            border-radius: 6px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+
+                                a {
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    color: white;
+                                    font-weight: normal;
+                                    transition: 0.4s;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+                                    &::before {
+                                        content: none;
+                                    }
+
+                                    &:hover {
+                                        background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    // homeMenu end 
+                    // exploreMenu start 
+                    &.exploreMenu {
+                        position: relative;
+
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
+                            width: 180px;
+                            background-color: rgba(0, 0, 0, 0.753);
+                            border-radius: 6px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+
+                                a {
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    transition: 0.4s;
+                                    color: white;
+                                    font-weight: normal;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+
+                                    &::before {
+                                        content: none;
+                                    }
+
+                                    &:hover {
+                                        background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+                    // exploreMenu end 
+                    // authorMenu start 
+                    &.authorMenu {
+                        position: relative;
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
+                            width: 180px;
+                            background-color: rgba(0, 0, 0, 0.753);
+                            border-radius: 6px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+
+                                a {
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.4s;
+                                    font-weight: normal;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+
+                                    &::before {
+                                        content: none;
+                                    }
+
+                                    &:hover {
+                                        background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    // authorMenu end 
+                    // statsMenu start 
+                    &.statsMenu {
+                        position: relative;
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
+                            width: 180px;
+                            background-color: rgba(0, 0, 0, 0.753);
+                            border-radius: 6px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+
+                                a {
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.4s;
+                                    font-weight: normal;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+
+                                    &::before {
+                                        content: none;
+                                    }
+
+                                    &:hover {
+                                        background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    // statsMenu end 
+                }
+            }
+        }
+
+        .wallet {
+            padding: 25px;
+            margin-left: 10px;
+
+            a {
+                display: block;
+                padding: 5px 15px;
+                border-radius: 20px;
+                color: white;
+                font-weight: 500;
+                font-size: 14px;
+                background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+            }
+        }
+    }
+}
+
+// header end 
+// ----- 
+// gigaland start 
+.gigaland {
+    width: 100%;
+    // height: 110vh;
+    background: url(https://gigaland.io/images/background/20.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .textBox {
+        margin-top: 35px;
+        color: white;
+        padding-top: 35px;
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-weight: 300;
+            font-size: 18px;
+        }
+
+        .numbers {
+            margin-top: 30px;
+
+            .numBox {
+                p {
+                    font-weight: 200;
+
+                    span {
+                        display: block;
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgBox {
+        margin-top: 2rem;
+    }
+
+    .explore {
+        margin-top: 10px;
+
+        a {
+            padding: 5px 30px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 400;
+            background: linear-gradient(217deg, rgb(16, 129, 232), rgb(243, 33, 119) 75%);
+        }
+    }
+}
+
+// gigaland end 

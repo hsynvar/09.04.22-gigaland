@@ -1,0 +1,345 @@
+a {
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: transparent;
+}
+
+#header .headLeft {
+  width: 40%;
+  padding: 15px;
+}
+
+#header .headLeft input {
+  width: 65%;
+  padding: 5px 0;
+  margin-left: 15px;
+  background: rgba(255, 255, 255, 0.198);
+  border-radius: 20px;
+  border: none;
+}
+
+#header .headLeft input::-webkit-input-placeholder {
+  padding: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+#header .headLeft input:-ms-input-placeholder {
+  padding: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+#header .headLeft input::-ms-input-placeholder {
+  padding: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+#header .headLeft input::placeholder {
+  padding: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+#header .headRight .menu ul li {
+  padding: 30px 10px;
+}
+
+#header .headRight .menu ul li a {
+  display: block;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+#header .headRight .menu ul li a i {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+#header .headRight .menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1081E8;
+}
+
+#header .headRight .menu ul li a:hover::before {
+  width: 70%;
+}
+
+#header .headRight .menu ul li.homeMenu {
+  position: relative;
+}
+
+#header .headRight .menu ul li.homeMenu ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#header .headRight .menu ul li.homeMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header .headRight .menu ul li.homeMenu ul li a {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+#header .headRight .menu ul li.homeMenu ul li a::before {
+  content: none;
+}
+
+#header .headRight .menu ul li.homeMenu ul li a:hover {
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+#header .headRight .menu ul li.homeMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#header .headRight .menu ul li.exploreMenu {
+  position: relative;
+}
+
+#header .headRight .menu ul li.exploreMenu ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#header .headRight .menu ul li.exploreMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header .headRight .menu ul li.exploreMenu ul li a {
+  padding: 10px;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+#header .headRight .menu ul li.exploreMenu ul li a::before {
+  content: none;
+}
+
+#header .headRight .menu ul li.exploreMenu ul li a:hover {
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+#header .headRight .menu ul li.exploreMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#header .headRight .menu ul li.authorMenu {
+  position: relative;
+}
+
+#header .headRight .menu ul li.authorMenu ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#header .headRight .menu ul li.authorMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header .headRight .menu ul li.authorMenu ul li a {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+#header .headRight .menu ul li.authorMenu ul li a::before {
+  content: none;
+}
+
+#header .headRight .menu ul li.authorMenu ul li a:hover {
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+#header .headRight .menu ul li.authorMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#header .headRight .menu ul li.statsMenu {
+  position: relative;
+}
+
+#header .headRight .menu ul li.statsMenu ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#header .headRight .menu ul li.statsMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header .headRight .menu ul li.statsMenu ul li a {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+#header .headRight .menu ul li.statsMenu ul li a::before {
+  content: none;
+}
+
+#header .headRight .menu ul li.statsMenu ul li a:hover {
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+#header .headRight .menu ul li.statsMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#header .headRight .wallet {
+  padding: 25px;
+  margin-left: 10px;
+}
+
+#header .headRight .wallet a {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+.gigaland {
+  width: 100%;
+  background: url(https://gigaland.io/images/background/20.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gigaland .textBox {
+  margin-top: 35px;
+  color: white;
+  padding-top: 35px;
+}
+
+.gigaland .textBox h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.gigaland .textBox h5 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.gigaland .textBox .numbers {
+  margin-top: 30px;
+}
+
+.gigaland .textBox .numbers .numBox p {
+  font-weight: 200;
+}
+
+.gigaland .textBox .numbers .numBox p span {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.gigaland .imgBox {
+  margin-top: 2rem;
+}
+
+.gigaland .explore {
+  margin-top: 10px;
+}
+
+.gigaland .explore a {
+  padding: 5px 30px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 400;
+  background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+/*# sourceMappingURL=style.css.map */
