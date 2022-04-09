@@ -61,8 +61,9 @@ a {
 }
 
 #header .headRight .menu ul li a i {
-  font-size: 13px;
-  margin-left: 5px;
+  font-size: 12px;
+  margin-left: 3px;
+  color: #d4d2d2;
 }
 
 #header .headRight .menu ul li a::before {
@@ -298,19 +299,26 @@ a {
 }
 
 .gigaland .textBox {
-  margin-top: 35px;
+  margin-top: 3rem;
   color: white;
-  padding-top: 35px;
+  padding-top: 45px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.gigaland .textBox h4 {
+  font-size: 18px;
 }
 
 .gigaland .textBox h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
+  margin: 20px 0;
 }
 
 .gigaland .textBox h5 {
   font-weight: 300;
   font-size: 18px;
+  margin: 20px 0;
 }
 
 .gigaland .textBox .numbers {
