@@ -9,6 +9,10 @@ a {
     width: 100%;
     background-color: transparent;
 
+    &.headerBlack {
+        background-color: rgba(0, 0, 0, 0.753);
+    }
+
     .headLeft {
         width: 40%;
         padding: 15px;
@@ -318,7 +322,6 @@ a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     .textBox {
         margin-top: 3rem;
         color: white;
@@ -333,8 +336,6 @@ a {
             font-size: 3.5rem;
             font-weight: bold;
             margin: 20px 0;
-
-
         }
 
         h5 {
@@ -361,11 +362,11 @@ a {
     }
 
     .imgBox {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .explore {
-        margin-top: 10px;
+        // margin-top: 10px;
 
         a {
             padding: 5px 30px;
@@ -378,10 +379,87 @@ a {
 }
 
 // gigaland end 
+// how start 
+.how {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1A1A25;
+    padding: 30px;
+    .text {
+        width: 30%;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 16px;
 
+        h1 {
+            color: white;
+            font-weight: bolder ;
+            font-size: 35px;
+        font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            span {
+                background: linear-gradient(45deg, #F32177, #1081e8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        hr {
+            width: 20%;
+            margin: 20px auto;
+            height: 4px;
+            background: linear-gradient(45deg, #F32177, #1081e8);
+        }
+
+
+    }
+    .allBoxes{
+        width: 100%;
+        margin-top: 2rem;
+        .miniBox{
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid rgba(245, 245, 245, 0.459);
+            padding: 40px;
+            i{
+                margin: 20px 0;
+                padding: 15px 13px;
+                background: linear-gradient(217deg, #1081e8, #F32177);
+                border-radius: 5px;
+                font-size: 30px;
+                color: whitesmoke;
+            }
+            h4{
+                font-weight: bolder;
+                color: white;
+            }
+            span{
+                margin-top: 10px;
+                font-size: 16px;
+                display: block;
+                color: gray;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RESPONSIVE START 
 @media(max-width:576px) {
     #header {
         background-color: rgba(0, 0, 0, 0.753);
+
         .headLeft {
             input {
                 display: none;
@@ -398,12 +476,20 @@ a {
                 opacity: 0;
                 transition: 0.3s ease-in;
                 visibility: hidden;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         width: 95%;
                         border-bottom: 1px solid rgba(245, 245, 245, 0.183);
+
+                        a {
+                            &::before {
+                                content: none;
+                            }
+                        }
                     }
                 }
+
                 &.navActive {
                     opacity: 1;
                     visibility: visible;
@@ -414,6 +500,39 @@ a {
 
         .navIcon {
             display: block;
+        }
+    }
+
+    // header end 
+    .gigaland {
+        padding: 15px;
+
+        .textBox {
+            h1 {
+                font-size: 5rem;
+            }
+
+            .numbers {
+                .numBox {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .imgBox{
+            display: none;
+        }
+    }
+    // gigaland end 
+    // how start 
+    .how{
+        .text{
+            width: 100%;
+        }
+        .allBoxes{
+            .miniBox{
+                padding: 25px;
+                margin-bottom: 15px;
+            }
         }
     }
 }

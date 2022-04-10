@@ -10,6 +10,10 @@ a {
   background-color: transparent;
 }
 
+#header.headerBlack {
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
 #header .headLeft {
   width: 40%;
   padding: 15px;
@@ -348,11 +352,7 @@ a {
 }
 
 .gigaland .imgBox {
-  margin-top: 2rem;
-}
-
-.gigaland .explore {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .gigaland .explore a {
@@ -361,6 +361,73 @@ a {
   color: white;
   font-weight: 400;
   background: linear-gradient(217deg, #1081e8, #f32177 75%);
+}
+
+.how {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1A1A25;
+  padding: 30px;
+}
+
+.how .text {
+  width: 30%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.how .text h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.how .text h1 span {
+  background: linear-gradient(45deg, #F32177, #1081e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.how .text hr {
+  width: 20%;
+  margin: 20px auto;
+  height: 4px;
+  background: linear-gradient(45deg, #F32177, #1081e8);
+}
+
+.how .allBoxes {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.how .allBoxes .miniBox {
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.459);
+  padding: 40px;
+}
+
+.how .allBoxes .miniBox i {
+  margin: 20px 0;
+  padding: 15px 13px;
+  background: linear-gradient(217deg, #1081e8, #F32177);
+  border-radius: 5px;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.how .allBoxes .miniBox h4 {
+  font-weight: bolder;
+  color: white;
+}
+
+.how .allBoxes .miniBox span {
+  margin-top: 10px;
+  font-size: 16px;
+  display: block;
+  color: gray;
 }
 
 @media (max-width: 576px) {
@@ -385,6 +452,9 @@ a {
     width: 95%;
     border-bottom: 1px solid rgba(245, 245, 245, 0.183);
   }
+  #header .headRight .menu ul li a::before {
+    content: none;
+  }
   #header .headRight .menu.navActive {
     opacity: 1;
     visibility: visible;
@@ -392,6 +462,25 @@ a {
   }
   #header .navIcon {
     display: block;
+  }
+  .gigaland {
+    padding: 15px;
+  }
+  .gigaland .textBox h1 {
+    font-size: 5rem;
+  }
+  .gigaland .textBox .numbers .numBox {
+    margin-bottom: 30px;
+  }
+  .gigaland .imgBox {
+    display: none;
+  }
+  .how .text {
+    width: 100%;
+  }
+  .how .allBoxes .miniBox {
+    padding: 25px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
