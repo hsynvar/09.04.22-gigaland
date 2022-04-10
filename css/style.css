@@ -305,6 +305,7 @@ a {
 }
 
 .gigaland {
+  padding: 20px;
   width: 100%;
   background: url(https://gigaland.io/images/background/20.jpg);
   background-position: center;
@@ -430,6 +431,116 @@ a {
   color: gray;
 }
 
+.newItems {
+  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1A1A25;
+}
+
+.newItems .textBox {
+  width: 30%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.newItems .textBox h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.newItems .textBox h1 span {
+  background: linear-gradient(45deg, #F32177, #1081e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.newItems .textBox hr {
+  width: 20%;
+  margin: 20px auto;
+  height: 4px;
+  background: linear-gradient(45deg, #F32177, #1081e8);
+}
+
+.newItems .bigBox {
+  margin-top: 2rem;
+}
+
+.newItems .bigBox .box {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.459);
+  padding: 30px;
+}
+
+.newItems .bigBox .box .miniImg {
+  position: absolute;
+  top: 0%;
+  left: 7%;
+  width: 20%;
+  z-index: 1;
+}
+
+.newItems .bigBox .box .miniImg img {
+  border-radius: 30px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.newItems .bigBox .box .miniImg img:hover {
+  border: 3px solid #F32177;
+}
+
+.newItems .bigBox .box img {
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.newItems .bigBox .box .textBig {
+  margin-top: 20px;
+  color: white;
+  position: relative;
+}
+
+.newItems .bigBox .box .textBig h6 i {
+  margin-left: 30px;
+}
+
+.newItems .bigBox .box .textBig span {
+  color: gray;
+}
+
+.newItems .bigBox .box .textBig span p {
+  color: whitesmoke;
+  display: inline;
+  margin-left: 10px;
+}
+
+.newItems .bigBox .box .textBig a {
+  display: block;
+  margin-top: 10px;
+}
+
+.newItems .bigBox .box .textBig .heart {
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+}
+
+.newItems .bigBox .box .textBig .heart i {
+  color: gray;
+}
+
+.newItems .bigBox .box:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media (max-width: 576px) {
   #header {
     background-color: rgba(0, 0, 0, 0.753);
@@ -481,6 +592,15 @@ a {
   .how .allBoxes .miniBox {
     padding: 25px;
     margin-bottom: 15px;
+  }
+  .newItems .textBox {
+    width: 100%;
+  }
+  .newItems .bigBox .box {
+    margin-bottom: 20px;
+  }
+  .newItems .bigBox .box .miniImg {
+    width: 13%;
   }
 }
 /*# sourceMappingURL=style.css.map */
