@@ -432,6 +432,7 @@ a {
 }
 
 .newItems {
+  position: relative;
   padding: 20px;
   width: 100%;
   overflow: hidden;
@@ -465,18 +466,28 @@ a {
   background: linear-gradient(45deg, #F32177, #1081e8);
 }
 
-.newItems .bigBox {
-  margin-top: 2rem;
+.newItems .allBoxes {
+  width: 100%;
+  overflow: hidden;
 }
 
-.newItems .bigBox .box {
+.newItems .allBoxes .bigBox {
+  margin-top: 2rem;
+  width: 200%;
+}
+
+.newItems .allBoxes .bigBox .box {
+  width: calc(100% / 8 - 20px);
   position: relative;
   border-radius: 20px;
   border: 1px solid rgba(245, 245, 245, 0.459);
   padding: 30px;
+  margin: 0 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
-.newItems .bigBox .box .miniImg {
+.newItems .allBoxes .bigBox .box .miniImg {
   position: absolute;
   top: 0%;
   left: 7%;
@@ -484,65 +495,97 @@ a {
   z-index: 1;
 }
 
-.newItems .bigBox .box .miniImg img {
+.newItems .allBoxes .bigBox .box .miniImg img {
   border-radius: 30px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.newItems .bigBox .box .miniImg img:hover {
+.newItems .allBoxes .bigBox .box .miniImg img:hover {
   border: 3px solid #F32177;
 }
 
-.newItems .bigBox .box img {
+.newItems .allBoxes .bigBox .box img {
+  width: 100%;
   margin-top: 30px;
   border-radius: 10px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-.newItems .bigBox .box .textBig {
+.newItems .allBoxes .bigBox .box .textBig {
   margin-top: 20px;
   color: white;
   position: relative;
 }
 
-.newItems .bigBox .box .textBig h6 i {
+.newItems .allBoxes .bigBox .box .textBig h6 i {
   margin-left: 30px;
 }
 
-.newItems .bigBox .box .textBig span {
+.newItems .allBoxes .bigBox .box .textBig span {
   color: gray;
 }
 
-.newItems .bigBox .box .textBig span p {
+.newItems .allBoxes .bigBox .box .textBig span p {
   color: whitesmoke;
   display: inline;
   margin-left: 10px;
 }
 
-.newItems .bigBox .box .textBig a {
+.newItems .allBoxes .bigBox .box .textBig a {
   display: block;
   margin-top: 10px;
 }
 
-.newItems .bigBox .box .textBig .heart {
+.newItems .allBoxes .bigBox .box .textBig .heart {
   position: absolute;
   right: 0;
   font-size: 13px;
 }
 
-.newItems .bigBox .box .textBig .heart i {
+.newItems .allBoxes .bigBox .box .textBig .heart i {
   color: gray;
 }
 
-.newItems .bigBox .box:hover img {
+.newItems .allBoxes .bigBox .box:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
+.newItems .allBoxes .bigBox .next {
+  position: absolute;
+  right: 3%;
+  bottom: 40%;
+  cursor: pointer;
+}
+
+.newItems .allBoxes .bigBox .next i {
+  background-color: #1A1A25;
+  padding: 15px 18px;
+  border-radius: 25px;
+  color: white;
+  border: 0.2px solid white;
+}
+
+.newItems .allBoxes .bigBox .prev {
+  position: absolute;
+  left: 3%;
+  bottom: 40%;
+  cursor: pointer;
+}
+
+.newItems .allBoxes .bigBox .prev i {
+  color: white;
+  background-color: #1A1A25;
+  padding: 15px 18px;
+  border-radius: 25px;
+  border: 0.2px solid white;
+}
+
 @media (max-width: 576px) {
   #header {
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.753);
   }
   #header .headLeft input {
